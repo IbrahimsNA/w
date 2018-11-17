@@ -1,0 +1,79 @@
+*{margin:0;padding:0;}
+body{
+	background:#FCFCFC;
+	font:12px tahoma;
+	direction:rtl;	
+}
+.container{width:1000px;margin:auto;}
+.clear{clear:both;}
+.navtop{background:#F9F9F9;height:40px; border-bottom:1px soild #F0F0F0;}
+.navtop ul{list-style:none;padding:0;}
+.navtop ul li{
+	float:right;
+	margin-left:18px;
+	line-height:36px;
+}
+.navtop ul li a{text-decoration:none;color:#858585;}
+.navtop ul li a:hover{color:#000;}
+.head{padding:10px;}
+.logo{float:right;}
+.ads{float:left;}
+------------------------------------------------------
+.navbar{background:#fff;height:55px; border-bottom:1px soild #F8F8F8; border-top:1px soild #F8F8F8;}
+.navbar ul{list-style:none;padding:0;}
+.navbar ul li{
+	float:right;
+	margin-left:18px;
+	line-height:55px;
+}
+.navbar ul li a{text-decoration:none;color:#858585;}
+.navbar ul li a:hover{}
+.footer{color:#fff;background:#3F3F3F;padding:10px; text-align:center;}
+.rightco{
+
+
+	background:#fff;
+	border:1px solid #E0E0E0;
+	margin-bottom:10px;
+}
+
+.blockl{
+	
+	float:left;
+	width:320px;
+
+}
+.pic img{width:220px;height:140px;float:right;}
+.Cont{float:right}
+td p{font-size:12px;}
+.b_t_in{background:#FAFAFA;padding:10px;border-bottom:1px solid #E0E0E0;}
+.more{float:left;padding:0px;}
+.more a{}
+.tb{padding:6px;}
+.titleblock h3{font-family:tahoma;font-size:13px;border-bottom:5px solid #2E72D8;padding:4px;}
+.contentblock{background:#fff;padding:4px;}
+------------------------------------------------------------
+.fregister{
+	background:#fff;
+	padding:5px;
+	width:670px;
+}
+.error{
+background:#fa8d88;border:1px solid #d83c35;color:c6160f;padding:10px;text-align:center;}
+
+.success{background:#b1f47f;border:1px solid #86e341;color:#5cc60f;padding:10px;text-align:center;}
+.sett{border:0;padding:5px;background:#027abe;color:#fff;font:12px tahoma;}
+.sett:hover{background:#0684cd;}
+.adminco{background:#fff;margin-top:5px;border:1px solid #F9F9F9;padding:3px;border-radius:3px;font:13px tahoma;}
+input[type=text],textarea{border:1px solid #E9E4E4;padding:8px 5px;}
+input[type=submit]{border:0;background:#6bbc14;color:#fff;font:12px tahoma;padding:8px 7px;}
+.bluebox{border:1px solid #2c92ab;background:#92dff2;padding:10px;color:#0f7b96:font:12px tahoma;}
+/**
+margin: 0.5em 0 0.5em 0;
+border: 0.1em solid #FFD700;
+background-image: url(.././themes/original/img/s_notice.png);
+background-repeat: no-repeat;
+background-position: 10px 50%;
+padding: 10px 10px 10px 36p
+
+*/
