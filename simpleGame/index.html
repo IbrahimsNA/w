@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>SimpleGame</title>
+        <link rel='stylesheet' href='css/font-awesome.css' />
+        <link rel='stylesheet' href='css/normalize.css' />
+        <link rel='stylesheet' href='css/style.css' />
+      <!--  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,800'> -->
+    </head>
+    <body>
+ <div id="header">
+    <div id="score-div">
+        <span class="lvl-1-score circle2" ></span>
+        <span class="lvl-2-score circle2"></span>
+    </div>
+        <label id="score">Your Score: <span>0</span></label>
+        <label id="remaining">Circle Remaining: <span>4</span></label>
+        <label id="clicks-remaining">Clicks Remaining: <span>10</span></label>
+
+
+ </div>
+ <!--level-1-->
+ <div class="lvl-1">
+    <div class="lvl-1-circle"></div>
+    <div class="lvl-1-circle"></div>
+    <div class="lvl-1-circle"></div>
+    <div class="lvl-1-circle"></div>
+    <div class="lvl-1-win win">
+        <h2>Good</h2>
+        <h3>Now You Can Start <span>Level 2</span></h3>
+    </div>
+</div>
+<!--/level-1-->
+<!--level-2-->
+<div class="lvl-2">
+    <div class="lvl-2-circle"></div>
+    <div class="lvl-2-circle"></div>
+    <div class="lvl-2-circle"></div>
+    <div class="lvl-2-circle"></div>
+    <div class="lvl-2-win win">
+        <h2>Good</h2>
+        <h3>You Finished The Game <a href="index.html">Restart</a></h3>
+    </div>
+</div>
+<!--/level-2-->
+
+<h2 class="lose">Game Over
+
+    <a href="index.html">Restart</a>
+</h2>
+
+    
+<!-- End Footer -->
+        <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

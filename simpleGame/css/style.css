@@ -1,0 +1,121 @@
+body{
+    overflow:hidden;
+}
+div#header{
+    text-align:center;
+    padding-top:15px;
+}
+div#score-div{
+    display:inline-block;
+}
+div#score-div span{
+    width:20px;
+    height:20px;
+    margin-right:5px;
+    display: inline-block;
+    position: relative;
+}
+.circle{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background-color:red; 
+    display:inline-block;
+    position: absolute;
+}
+.circle2{
+    border-radius: 50%;
+}
+.lvl-1-score{
+    background-color:red;
+}
+.lvl-1-score:before{
+    content:"2";
+    position:absolute;
+    bottom:-20px;
+    left:7px;
+    font-size: 12px;
+}
+.lvl-2-score{
+    background-color: green;
+}
+.lvl-2-score:before{
+    content:"4";
+    position: absolute;
+    bottom:-20px;
+    left:7px;
+    font-size: 12px;
+}
+label{
+    display:inline-block;
+    font-size: 20px;
+    margin-left:100px;
+}
+/*
+h2{
+    font-size: 100px;
+    text-align: center;
+    display: none;
+    position:absolute;
+    top:10%;
+    width:100%;
+}
+*/
+/*
+    animation-name:test;
+    animation-duration:1s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+@keyframes test{
+    0%{margin-left:0;}
+    100%{margin-left:150px;}
+}*/
+.win , .lose{
+    position:absolute;
+    top:10%;
+    width:100%;
+    text-align:center;
+    display:none;
+}
+
+h2{
+    font-size: 100px;
+}
+h2 a{
+    font-size: 60px;
+}
+.win h3{
+    font-size: 60px;
+}
+.win h3 span , .win h3 a{
+    color:blue;
+    text-decoration: none;
+}
+.win h3 span:hover , .win h3 a:hover{
+    border-bottom:3px solid blue;
+}
+/******* new des******/
+
+.lvl-1-circle{
+position: absolute;
+width:150px;
+height: 150px;
+border-radius: 50%;
+background-color: red;
+
+
+}
+/* level 2 */
+.lvl-2{
+    display:none;
+}
+.lvl-2-circle{
+    position: absolute;
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: green;
+
+    
+    }
