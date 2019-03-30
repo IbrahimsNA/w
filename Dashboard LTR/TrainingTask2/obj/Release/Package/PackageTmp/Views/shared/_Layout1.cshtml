@@ -1,0 +1,149 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    @*<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">*@
+    <link href="~/Content/all.css" rel="stylesheet" />
+    <link href="~/Content/alertify.css" rel="stylesheet" />
+    <link href="~/Content/themes/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/themes/default.css" rel="stylesheet" />
+    @*DataTables*@
+    
+    @*owl carousel*@
+    <link href="~/owlcarousel/assets/owl.carousel.css" rel="stylesheet" />
+
+    <link href="~/owlcarousel/assets/owl.theme.default.css" rel="stylesheet" />
+    @* End owl carousel*@
+    <link href="~/Content/css-loader.css" rel="stylesheet" />
+   
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+
+   
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ca-sh">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.t2.sa/themes/custom/t2/logo.svg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Portal/Portal">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Login/Login">Login</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Register/Register">Register</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <!--End Navbar-->
+       
+
+         
+            <div class="container-fluid">
+                @RenderBody()
+                </div>
+                <!--Footer-->
+                @*<div class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6 col-lg-3">
+                                <iframe marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d175.76506450322626!2d35.8763274!3d31.9874199!2m1!2f3.15!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x151ca033ce49d559%3A0x2fb77b1c05849ea5!2sNextwo!5e1!3m2!1sen!2sjo!4v1549897265380" frameborder="0"></iframe>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="site-info pt-3">
+                                    <h3 class="two">Contact Us</h3>
+                                    <ul class="list-unstyled ">
+                                        <li>Mobile:&nbsp;&nbsp;0781953625</li>
+                                        <li>Fax:&nbsp;&nbsp;0781953625</li>
+                                        <li>Email: <a href="mailto:mail@mail.com?subject=Contact">&nbsp;&nbsp;mail@mail.com</a></li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6  col-lg-3">
+                                <div class="site-info pt-3">
+                                    <h3 class="three">Who We Are</h3>
+                                    <ul class="list-unstyled ">
+                                        <li>Our Clients</li>
+                                        <li>Our Products</li>
+                                        <li>Our Clients</li>
+                                        <li>Our Portfolio</li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="site-info pt-3">
+                                    <h3 class="three">Who We Are</h3>
+                                    <ul class="list-unstyled ">
+                                        <li>Our Clients</li>
+                                        <li>Our Products</li>
+                                        <li>Our Clients</li>
+                                        <li>Our Portfolio</li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>*@
+                <div class="copyright">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6 text-center text-sm-left text-uppercase">
+                                Copyright 2019 T2.SA ©
+                            </div>
+                            <div class="col-sm-6 text-center text-sm-right">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--End Footer-->
+                <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script  type="module"  src="~/Scripts/popper.js"></script>
+                <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/alertify.js"></script>
+
+                <script src="~/owlcarousel/owl.carousel.js"></script>
+                <script src="~/Scripts/main.js"></script>
+
+              
+          
+</body>
+</html>

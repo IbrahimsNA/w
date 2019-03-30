@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    @*<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">*@
+    <link href="~/Content/all.css" rel="stylesheet" />
+    <link href="~/Content/animate.css" rel="stylesheet" />
+    @*DataTables*@
+    @*<link href="~/DataTables/css/datatables.css" rel="stylesheet" />*@
+
+    <link href="~/DataTables/css/dataTables.bootstrap4.css" rel="stylesheet" />
+    <link href="~/DataTables/css/responsive.dataTables.css" rel="stylesheet" />
+    <link href="~/DataTables/css/responsive.bootstrap4.css" rel="stylesheet" />
+    <link href="~/DataTables/css/jquery.dataTables.css" rel="stylesheet" />
+
+    @*End DataTables*@
+    @*fancybox*@
+    <link href="~/source/jquery.fancybox.css" rel="stylesheet" />
+    <link href="~/source/helpers/jquery.fancybox-buttons.css" rel="stylesheet" />
+    <link href="~/source/helpers/jquery.fancybox-thumbs.css" rel="stylesheet" />
+    @*End fancybox*@
+    @*duallistbox*@
+
+    <link href="~/Content/bootstrap-duallistbox.css" rel="stylesheet" />
+    @*end duallistbox*@
+    @*owl carousel*@ 
+    <link href="~/owlcarousel/assets/owl.carousel.css" rel="stylesheet" />
+    <link href="~/owlcarousel/assets/owl.theme.default.css" rel="stylesheet" />
+    @* End owl carousel*@
+    
+    <link href="~/Content/jquery.calendars.picker.css" rel="stylesheet" />
+    @*select2*@
+    <link href="~/Content/css/select2.css" rel="stylesheet" />  
+    <link href="~/Content/css/select2-bootstrap.css" rel="stylesheet" />
+    @*select2*@
+    @*<link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css" />*@
+    <link href="~/Content/alertify.css" rel="stylesheet" />
+    <link href="~/Content/themes/default.css" rel="stylesheet" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+        <nav id="sidebar">
+            <div class="sidebar-header sidebarh-bg">
+                <h5>Sidebar</h5>
+
+            </div>
+            <div class="user-panel sidebar-bg">
+                <div class="profile-info-img">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="~/Content/images/user2-160x160.jpg" class="img-circle text-left" alt="User Image" />
+                        </div>
+                        <div class="col-9">
+
+                            <p id="username">Ibrahim Sa'adi</p>
+                            <a href="#" id="online"><i class="fa fa-circle text-success"></i> Online</a>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <form class="sidebar-form">
+                                    <div class="input-group">
+                                        <input type="text" name="q" class="form-control" placeholder="Search...">
+                                        <span class="input-group-btn">
+                                            <button type="submit" name="search" id="search-btn" class="btn">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="profile-info-text">
+                </div>
+                <ul class="list-unstyled components relative">
+                    <li class="main-nav-li text-center">MAIN NAVIGATION</li>
+                    <li class="active first relative ">
+                        <a href="" >
+                            <span id="li-icon"><i class="far fa-envelope"></i></span>
+                            <span id="li-label">Inbox</span>
+                        </a>
+                       
+                    </li>
+                    <li class="active relative">
+                        <a href="">
+                            <span id="li-icon"><i class="far fa-trash-alt"></i></span>
+                            <span id="li-label">OutBox</span>
+                        </a>
+                    </li>
+                    <li class="active relative">
+                        <a href="">
+                            <span id="li-icon"><i class="far fa-trash-alt"></i></span>
+                            <span id="li-label">Trash</span>
+                        </a>
+                    </li>
+                    <li class="active relative">
+                        <a href="">
+                            <span id="li-icon"><i class="fa fa-folder-open"></i></span>
+                            <span id="li-label">Draft</span>
+                        </a>
+                        </li>
+                    <li class="active relative">
+                        <a href="">
+                            <span id="li-icon"><i class="fas fa-table" ></i>
+</span>
+                            <span id="li-label">Create User</span>
+                        </a>
+                    </li>
+                    <li class="active relative">
+                        <a href="">
+                            <span id="li-icon">
+                                <i class="fas fa-sitemap"></i>
+                            </span>
+                            <span id="li-label">Create Org</span>
+                        </a>
+                    </li>
+                    <li class="active relative">
+                        <a href="">
+                            <span id="li-icon">
+                                <i class="fas fa-chart-pie"></i>
+                            </span>
+                            <span id="li-label">Show Users</span>
+                        </a>
+                    </li>
+                    
+                        <!-- seperate ul -->
+</ul>
+
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <!--navbar-->
+            <nav class="navbar navbar-expand-lg navbar-light mainnavbar-bg">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fa fa-bars"></i>
+                        <span></span>
+                    </button>
+                    @*<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>*@
+                    <div class="collapse navbar-collapse nav-right" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto white ">
+                            <li class="nav-item active white">
+                                <a class="nav-link" href="#">
+                                    <i class="far fa-envelope white"></i>
+                                    <span class="badge badge-success">4</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">
+                                    <i class="far fa-bell white"></i>
+                                    <span class="badge badge-warning ">9</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active white">
+                                <a class="nav-link" href="#">
+                                    <i class="far fa-flag white" aria-hidden="true"></i>
+                                    <span class="badge badge-danger">9</span>
+                                </a>
+                            </li>
+                            <li class="nav-item user active ">
+                                <a href="#">
+                                    <img src="~/Content/images/user2-160x160.jpg" class="user-image">
+                                    <span class="alex">Alexander Pierce</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" data-toggle=""><i class="fa fa-cogs" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+
+            <!--Navbar-->
+            <div class="container-fluid">
+                <script src="~/Scripts/jquery-3.3.1.js"></script>
+                <script src="~/Scripts/popper.js"></script>
+                    <script src="~/Scripts/bootstrap.js"></script>
+                <script src="~/Scripts/orgchart.js"></script>
+                <script src="~/Scripts/chart.js"></script>
+                <script src="~/Scripts/chartjs-plugin-labels.js"></script>
+                <script src="~/source/helpers/jquery.mousewheel.pack.js"></script>
+                @*Datatables*@
+                <script src="~/DataTables/js/datatables.js"></script>
+                <script src="~/DataTables/js/dataTables.bootstrap.js"></script>
+                <script src="~/DataTables/js/jquery.dataTables.js"></script>
+                <script src="~/DataTables/js/dataTables.bootstrap4.js"></script>
+                <script src="~/DataTables/js/dataTables.responsive.js"></script>
+               
+                <script src="~/DataTables/js/responsive.bootstrap.js"></script>
+
+                @*Datatables*@
+                <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+                <script src="~/Scripts/jquery.bootstrap-duallistbox.js"></script>
+                <script src="~/owlcarousel/owl.carousel.js"></script>
+                    <script src="~/Scripts/select2.min.js"></script>
+                <script src="~/Scripts/jquery.calendars.js"></script>
+                <script src="~/Scripts/jquery.calendars.plus.js"></script>
+                <script src="~/Scripts/jquery.plugin.js"></script>
+                <script src="~/Scripts/jquery.calendars.picker.js"></script>
+                <script type="text/javascript" src="~/source/helpers/jquery.mousewheel.pack.js"></script>
+                <script src="~/source/jquery.fancybox.pack.js"></script>
+                <script src="~/source/helpers/jquery.fancybox-buttons.js"></script>
+                <script src="~/source/helpers/jquery.fancybox-thumbs.js"></script>
+                <script src="~/source/helpers/jquery.fancybox-media.js"></script>
+                    @*<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>*@
+                <script src="~/Scripts/chart.js"></script>
+                <script src="~/Scripts/chartjs-plugin-labels.js"></script>
+                <script src="~/Scripts/alertify.js"></script>
+                <script src="~/Scripts/toastr.min.js"></script>
+                <script src="~/Scripts/wow.js"></script>
+                    <script src="~/Scripts/main.js"></script>
+                
+                    @RenderBody()
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

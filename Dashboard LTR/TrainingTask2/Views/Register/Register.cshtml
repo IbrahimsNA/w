@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/shared/_Layout1.cshtml";
+}
+
+<div class="row">
+    <div class="left-side">
+        <div class="text">
+            <span class="t2">T2</span> is a creative organization that focuses on research and development as its core concerns. Such concerns enable us to help clients improve and enhance their business performance among major business areas and provide support to maximize technological ROI across the whole enterprise.
+        </div>
+    </div>
+    <form class="offset-6 col-sm-6 col-lg-6" style="padding: 3% 10%;">
+        <div class="user-img">
+            <span><i class="fas fa-user-circle"></i></span>
+        </div>
+        <h2>Register New User</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+                
+                <div class="form-group input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text  bg-app"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control input-app" placeholder="First Name" aria-label="FirstName" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text  bg-app"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control input-app" placeholder="Last Name" aria-label="LastName" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text  bg-app"><i class="fa fa-envelope"></i></span>
+                    </div>
+                    <input type="text" class="form-control input-app" placeholder="E-mail" aria-label="Mail" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-app"> <i class="fa fa-phone"></i> </span>
+                    </div>
+                    <select class="custom-select input-app" style="max-width: 85px;">
+                        <option selected="">+966</option>
+                        <option value="1">+962</option>
+                        <option value="2">+963</option>
+                        <option value="3">+961</option>
+                    </select>
+                    <input name="" class="form-control input-app" placeholder="Phone number" type="text">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text  bg-app"><i class="far fa-eye"></i></span>
+                    </div>
+                    <input type="password" class="form-control input-app psw" placeholder="Password" aria-label="password" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+        
+           
+        <div class="row">
+            <div class="col-md-12 pb-2">
+                <div class="remember custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                    <label class="custom-control-label" for="customCheck">I Accept Terms</label>
+                </div>
+                
+            </div>
+        </div>
+        <button type="button" class="btn btn-block flat-btn">Register</button>
+
+      
+       
+    </form>
+
+</div>
+
+
+@section head{
+    @Scripts.Render("~/bundles/Register")
+}

@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/shared/DashBoardLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card mb-3">
+            <div class="card-header">
+                Statictics
+            </div>
+            <div class="card-body">
+
+
+                <div class="row">
+
+
+
+
+                    <div class="col-md-6  text-center vl">
+                        <label>Messages Statictics</label>
+                        <canvas id="pie-chart"></canvas>
+
+
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <label>Messages Statictics </label>
+                        <canvas id="bar-charts"></canvas>
+
+                    </div>
+                </div>
+
+            </div><!--End  row card-->
+        </div>
+    </div>
+</div>
+<!--Tables-->
+<div class="row">
+  <div class="col-md-12">
+
+      <div class="card">
+          <div class="card-header">
+              Users Statictics
+          </div>
+          <div class="card-body">
+
+              <table class="table table-bordered table-striped table-hover">
+                  <thead>
+                      <tr>
+                          <th>Month</th>
+                          <th>Number of Messages</th>
+                          <th>Amount</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">Jan</th>
+                          <td>105</td>
+                          <td>$15,000.00</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Feb</th>
+                          <td>95</td>
+                          <td>$12,000.00</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Mar</th>
+                          <td>150</td>
+                          <td>$20,000.00</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Apr</th>
+                          <td>50</td>
+                          <td>$30,000.00</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">May</th>
+                          <td>80</td>
+                          <td>$15,000.00</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Jun</th>
+                          <td>110</td>
+                          <td>$22,000.00</td>
+                      </tr>
+
+                     
+
+                  </tbody>
+              </table>
+          </div>
+
+
+
+      </div>
+  </div>
+
+</div>
+<!--Tables-->
+@section head{
+    @Scripts.Render("~/bundles/Home")
+}

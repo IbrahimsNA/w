@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/shared/_Layout1.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-6 col-lg-6 left-side">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="about">
+                    <div class="text">
+
+                        <span class="t2">T2</span> is a creative organization that focuses on research and development as its core concerns. Such concerns enable us to help clients improve and enhance their business performance among major business areas and provide support to maximize technological ROI across the whole enterprise.
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <form class="col-sm-6 col-lg-6 Login-form">
+        <div class="user-img">
+            <span><i class="fas fa-user-circle"></i></span>
+        </div>
+        <h2>User Login</h2>
+
+      
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text  bg-app"><i class="fa fa-envelope"></i></span>
+                    </div>
+                    <input type="text" class="form-control input-app" placeholder="E-mail" aria-label="Mail" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+     
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text  bg-app"><i class="far fa-eye"></i></span>
+                    </div>
+                    <input type="password" class="form-control input-app psw" placeholder="Password" aria-label="password" aria-describedby="basic-addon1">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 pb-2">
+                <div class="remember custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                    <label class="custom-control-label" for="customCheck">Remember Me</label>
+                    
+                </div>
+                <span class="forget float-right" onclick="forget()"><a >Forget Password</a></span>
+               <div class="n"><span class="forget float-right activate" onclick="activate()"><a>Activate Account</a></span></div>
+
+            </div>
+        </div>
+        <button type="button" class="btn-1 btn-block bg-app">Login</button>
+
+
+
+    </form>
+
+</div>
+<div class="loader loader-default is-active" data-text="Loading.."></div>

@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Draft";
+    Layout = "~/Views/shared/DashBoardLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-3">
+            <div class="card-header">
+                Draft Messages
+            </div>
+            <div class="card-body">
+                <!--Btn Group-->
+
+
+                <div class="actions"> <i class="far fa-trash-alt action-empty disable1" onclick="delte('Do You Want To Remove This From Drafts?')" title="Empty Trash"></i> </div>
+
+
+                <!-- Search form -->
+                <!--Btn Group-->
+                <!--first search box-->
+                <div class="right-search">
+                    <div class="input-group ">
+                        <span class="input-group-btn search-icon">
+                            <button class="btn flat-btn" type="button"><span class=""> <i class="fas fa-search"></i></span></button>
+                        </span>
+
+                        <input type="text" class="form-control input1" name="x" placeholder="Search By Name">
+                        <input type="text" class="form-control input2" name="x" placeholder="Search By E-mail">
+                    </div>
+                </div>
+
+
+
+                <!--End Searchbox-->
+                <div class="table-responsive">
+                    <table id="Draft" class="table table-bordered table-striped"></table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section head{
+    @Scripts.Render("~/bundles/Draft")
+}

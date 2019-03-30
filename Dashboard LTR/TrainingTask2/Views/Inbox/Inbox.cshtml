@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Inbox";
+    Layout = "~/Views/shared/DashBoardLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-3">
+            <div class="card-header">
+                Inbox
+            </div>
+            <div class="card-body">
+                <div class="actions action-trash">  <i class="far fa-trash-alt action-empty disable1" onclick="delte('Do You Want To Delete This Message !?')" title="Empty Trash"></i> </div>
+
+                <!-- Search form -->
+                <!--Btn Group-->
+                <!--first search box-->
+                <div class="right-search">
+                    <div class="input-group ">
+                        <span class="input-group-btn search-icon">
+                            <button class="btn flat-btn" type="button"><span class=""> <i class="fas fa-search"></i></span></button>
+                        </span>
+
+                        <input type="text" class="form-control input1" name="x" placeholder="Search By Name">
+                        <input type="text" class="form-control input2" name="x" placeholder="Search By E-mail">
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table id="Inbox" class="table table-bordered table-striped">
+                       
+                    </table>
+                              
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+@section head{
+    @Scripts.Render("~/bundles/Inbox")
+}

@@ -1,0 +1,240 @@
+﻿
+@{
+    ViewBag.Title = "Uploads";
+    Layout = "~/Views/shared/_Layout.cshtml";
+}
+<style>
+.container {
+    max-width: 1100px;
+}</style>
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-2">
+            <div class="card-header">
+               Upload
+            </div>
+            <div class="card-body">
+                <div class="row pb-2">
+                    <div class="col-12 text-right">
+                        <input type="file" class="Uploadfile" name="myfile" id="uploadfile" onchange="AddFile(this , event)"  accept="image/jpg,image/png,image/jpeg,image/gif,application/pdf" multiple />
+                        <button type="button" class="btn btn-primary" onclick="openDialog('#uploadfile')"><i class="fas fa-paperclip"></i></button>
+                      
+
+                    
+                    </div>
+                </div>
+             
+                <div class="row">  
+                    <div class="col-12" id="ShowItems" style="display:none">                               
+                        <div id="owl-demo" class="owl-carousel owl-theme">
+
+
+
+                      </div>
+                    </div>  
+                    <div class="col-12 text-center" id="DefultBox">
+                       <div class="upload-conatiner">@*<i class="fas fa-file-invoice"></i>*@
+                           <i id="upicon" class="fas fa-file-upload"></i>
+                        <div id="up">Upload Photo</div>
+                        </div>
+                    </div>             
+                </div>
+               
+             
+              
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="card mb-2">
+            <div class="card-header">
+                Multi Uplaod With Preview
+            </div>
+            <div class="card-body">
+                <div class="row pb-2">
+                    <div class="col-12 text-right">
+                        <input type="file" class="Uploadfile2" name="myfile" id="uploadfile2" onchange="AddFile2(this , event)" accept="image/jpg,image/png,image/jpeg,image/gif,application/pdf" multiple />
+                        <button type="button" class="btn btn-primary" onclick="openDialog('#uploadfile2')"><i class="fas fa-paperclip"></i></button>
+
+
+
+                    </div>
+                </div>
+             
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border-gray p-2">
+                            <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="Item-Image img-container">
+                                     
+                                            <img src="~/Content/images/30366640446_eb359921c5_b.jpg" alt="" />
+                                            <a class="fancybox-thumb overlay" href="~/Content/images/30366640446_eb359921c5_b.jpg" rel="fancybox-thumb" title="(Eric Goncalves (cathing up again!))">
+                                                <i id="search" class="fas fa-search-plus search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="Item-Image img-container">
+                                            <img src="~/Content/images/pexels-photo.jpg" />
+                                            <img src="~/Content/images/pexels-photo.jpg" alt="" />
+                                            <a class="fancybox-thumb overlay" href="~/Content/images/pexels-photo.jpg" rel="fancybox-thumb" title="(Eric Goncalves (cathing up again!))">
+                                                <i class="fas fa-search-plus search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="Item-Image img-container">
+                             
+                                            <img src="~/Content/images/pexels-photo 11.jpg" alt="" />
+                                            <a class="fancybox-thumb overlay" href="~/Content/images/pexels-photo 11.jpg" rel="fancybox-thumb" title="(Eric Goncalves (cathing up again!))">
+                                                <i class="fas fa-search-plus search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="Item-Image img-container">
+                                        
+                                            <img src="~/Content/images/pexels-photo.jpg" alt="" />
+                                            <a class="fancybox-thumb overlay" href="~/Content/images/pexels-photo.jpg" rel="fancybox-thumb" title="(Eric Goncalves (cathing up again!))">
+                                                <i class="fas fa-search-plus search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="Item-Image img-container">
+                                    
+                                            <img src="~/Content/images/pexels-photo-908284.jpeg" alt="" />
+                                            <a class="fancybox-thumb overlay" href="~/Content/images/pexels-photo-908284.jpeg" rel="fancybox-thumb" title="(Eric Goncalves (cathing up again!))">
+                                                <i class="fas fa-search-plus search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="Item-Image img-container">
+                                            <img src="~/Content/images/pexels-photo-196644.jpeg" />
+                                
+                                            <a class="fancybox-thumb overlay" href="~/Content/images/pexels-photo-196644.jpeg" rel="fancybox-thumb" title="(Eric Goncalves (cathing up again!))">
+                                                <i class="fas fa-search-plus search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="Item-Image img-container">
+
+                                    
+                                            <img src="~/Content/images/macbook-apple-imac-computer-39284.jpeg" alt="" />
+                                            <a class="fancybox-thumb overlay" href="~/Content/images/macbook-apple-imac-computer-39284.jpeg" rel="fancybox-thumb" title="(Eric Goncalves (cathing up again!))">
+                                                <i class="fas fa-search-plus search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="Item-Image img-container">
+                                           
+                                            <img src="~/Content/images/ipad-mockup-apple-business-39559.jpeg"  alt="" />
+                                            <a class="fancybox-thumb overlay" href="~/Content/images/ipad-mockup-apple-business-39559.jpeg" rel="fancybox-thumb" title="(Eric Goncalves (cathing up again!))">
+                                                <i class="fas fa-search-plus search"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+              
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card mb-2">
+            <div class="card-header">
+                Upload And Preview
+            </div>
+            <div class="card-body">
+                <div class="row pb-2">
+                    <div class="col-12 text-right">
+                        @*<input type="file" class="Uploadfile2" name="myfile" id="uploadfile2" onchange="AddFile2(this , event)" accept="image/jpg,image/png,image/jpeg,image/gif,application/pdf" multiple />
+                        <button type="button" class="btn btn-primary" onclick="openDialog('#uploadfile2')"><i class="fas fa-paperclip"></i></button>*@
+
+                        <input type="file" name="images1[]" class="images1" id="images1" accept="image/jpg,image/png,image/jpeg,image/gif" multiple />
+                        <button type="button" class="btn btn-primary" onclick="openDialog('#images1')"><i class="fas fa-paperclip"></i></button>
+
+
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border-gray p-2">
+                            <div class="row" id="imgbox1">
+
+                          
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>

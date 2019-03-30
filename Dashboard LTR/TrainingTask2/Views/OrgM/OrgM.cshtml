@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Organization Management ";
+    Layout = "~/Views/shared/DashBoardLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-12">
+        <div class="card mb-3">
+            <div class="card-header">
+                Organization Management 
+            </div>
+            <div class="card-body">
+                <!--Btn Group-->
+
+                <div class="actions action-trash"><i class="fas fa-user-plus add" onclick="addOrg('Add New Orgnization')"></i> | <i class="fas fa-user-edit action-edit disable1" onclick="editOrg('Edit Current Orgnization')" ></i> | <i class="fas far fa-eye action-view disable1" id="viewOrg" onclick="viewOrg('View Current Orgnization')"></i> |  <i class="far fa-trash-alt action-empty disable1" onclick="delteOrg('Delete orgnization(s)')"></i> </div>
+
+                <!-- Search form -->
+                <!--Btn Group-->
+                <!--first search box-->
+                <div class="right-search">
+                    <div class="input-group ">
+                        <span class="input-group-btn search-icon">
+                            <button class="btn flat-btn" type="button"><span class=""> <i class="fas fa-search"></i></span></button>
+                        </span>
+
+                        <input type="text" class="form-control input1" name="x" placeholder="Search By Name">
+                        <input type="text" class="form-control input2" name="x" placeholder="Search By E-mail">
+                    </div>
+                </div>
+
+
+
+                <!--End Searchbox-->
+                <div class="table-responsive">
+                    <table id="OrgTable" class="table table-bordered table-striped"></table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section head{
+    @Scripts.Render("~/bundles/OrgM")
+
+}

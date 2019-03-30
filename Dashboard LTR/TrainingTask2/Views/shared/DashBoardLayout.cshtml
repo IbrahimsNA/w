@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+   
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/main-css")
+
+ 
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+
+        <nav id="sidebar">
+            <div class="sidebar-header sidebarh-bg">
+                <a href="../Portal/Portal"><img src="https://www.t2.sa/themes/custom/t2/logo.svg" /></a>
+
+            </div>
+            <div class="user-panel sidebar-bg">
+                <div class="profile-info-img">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="~/Content/images/user2-160x160.jpg" class="img-circle text-left" alt="User Image" />
+                        </div>
+                        <div class="col-9">
+
+                            <p id="username">Ibrahim Sa'adi</p>
+                            <a href="#" id="online"><i class="fa fa-circle text-success"></i> Online</a>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <form class="sidebar-form">
+                                    <div class="input-group">
+                                        <input type="text" name="q" class="form-control" placeholder="Search...">
+                                        <span class="input-group-btn">
+                                            <button type="submit" name="search" id="search-btn" class="btn">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="profile-info-text">
+                </div>
+                <ul class="list-unstyled components relative">
+                    <li class="main-nav-li text-center">MAIN NAVIGATION</li>
+                    <li class="active first relative ">
+                        <a href="/DashBoard/DashBoard">
+                            <span class="mdi mdi-chart-bar-stacked"></span>
+                            <span id="li-label">Statistics</span>
+                        </a>
+                    </li>
+                    <li class="active  relative ">
+                        <a href="/NewMsg/NewMsg">
+                            <span class="mdi mdi-account-edit"></span>
+                            <span id="li-label">New Message</span>
+                        </a>
+                    </li>
+           
+                   
+                   
+                    <li class="active relative">
+                        <a href="/Inbox/Inbox">
+                            <span id="li-icon" class="mdi mdi-inbox-arrow-down"></span>
+                           
+                            <span id="li-label">Inbox  <span class="badge badge-success ml-30">4</span></span>
+                        </a>
+                    </li>
+                    <li class="active relative">
+                        <a href="/Sent/Sent">
+                            <span id="li-icon" class="mdi mdi-send"></span>
+                            <span id="li-label">Sent </span>
+                        </a>
+                    </li>
+                    <li class="active relative">
+                        <a href="/Draft/Draft">
+                            <span id="li-icon">
+                                <span class="mdi mdi-file-cabinet"></span>
+                            </span>
+                            <span id="li-label">Draft</span>
+                        </a>
+                    </li>
+                    <li class="active relative">
+                        <a href="/Trash/Trash">
+                            <span id="li-icon">
+                                <span class="mdi mdi-trash-can-outline"></span>
+                            </span>
+                            <span id="li-label">Trash</span>
+                        </a>
+                    </li>
+                    <li class="active relative">
+                        <a href="/UsersM/UsersM">
+                            <span id="li-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </span>
+                            <span id="li-label">Users Managment</span>
+                        </a>
+                    </li>
+                    <li class="active relative">
+                        <a href="/OrgM/OrgM">
+                            <span id="li-icon">
+                                <i class="fas fa-sitemap"></i>
+                            </span>
+                            <span id="li-label">Organization Managment</span>
+                        </a>
+                    </li>
+                    <!-- seperate ul -->
+                </ul>
+
+
+            </div>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <!--navbar-->
+            <nav class="navbar navbar-expand-lg navbar-light mainnavbar-bg">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fa fa-bars"></i>
+                        <span></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse nav-right" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto white ">
+                            <li class="nav-item active white">
+                                <a class="nav-link" href="#">
+                                    <i class="far fa-envelope white"></i>
+                                    <span class="badge badge-success">4</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">
+                                    <i class="far fa-bell white"></i>
+                                    <span class="badge badge-warning ">9</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active white">
+                                <a class="nav-link" href="#">
+                                    <i class="far fa-flag white" aria-hidden="true"></i>
+                                    <span class="badge badge-danger">9</span>
+                                </a>
+                            </li>
+                            <li class="nav-item user active ">
+                                <a href="#">
+                                    <img src="~/Content/images/user2-160x160.jpg" class="user-image">
+                                    <span class="alex">Alexander Pierce</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" data-toggle=""><i class="fa fa-cogs" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+
+            <!--Navbar-->
+            <div class="container-fluid">
+
+                <div class="dis"></div>
+                <div class="Add-user-side">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="side-head mb-3 mt-3 text-center add-new-user"><h3></h3></div>
+
+                            <form>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label>First name</label>
+                                        <input type="text" class="form-control green-border1" placeholder="First name" value="" required>
+
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationTooltip02">Last name</label>
+                                        <input type="text" class="form-control green-border1" placeholder="Last name" value="" required>
+
+                                    </div>
+
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationTooltipUsername">Email</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-app"><i class="fas fa-at"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control green-border1" placeholder="E-mail.." required>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label>User Role:</label>
+                                        <select class="custom-select green-border1">
+                                            <option selected>user</option>
+                                            <option value="1">Moderator</option>
+                                            <option value="2">Admin</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label>User Status:</label>
+                                        <select class="custom-select green-border1">
+                                            <option selected>Active</option>
+                                            <option value="1">Offline</option>
+                                            <option value="2">Pending</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                            <button class="flat-btn mb-2" onclick="CloseSideBar('#view1', '-40%')">Save</button>
+                            <button class="flat-btn mb-2" onclick="CloseSideBar('#view1', '-40%')">Cancel</button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+              
+              
+
+                @RenderBody()
+            </div>
+
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/main-js")
+    @RenderSection("head", required: false)
+  
+    </body>
+</html>
